@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "タスク-ACCOUNT_SYSTEM",
+      "appliesTo": "ACCOUNT_SYSTEM/ACCOUNT_SYSTEM/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "タスク-ACCOUNT_SYSTEM",
+      "appliesTo": "ACCOUNT_SYSTEM/ACCOUNT_SYSTEM/",
+      "type": "launch"
+    }
+  ]
+}

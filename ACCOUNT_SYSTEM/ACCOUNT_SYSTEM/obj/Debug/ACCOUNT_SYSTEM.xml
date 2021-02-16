@@ -1,0 +1,152 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ACCOUNT_SYSTEM
+</name>
+</assembly>
+<members>
+<member name="T:ACCOUNT_SYSTEM.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ACCOUNT_SYSTEM.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ACCOUNT_SYSTEM.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:ACCOUNT_SYSTEM.AccountGroupCombobox.InitLayout">
+ <summary>
+ 選択肢を追加する
+ </summary>
+</member>
+<member name="T:ACCOUNT_SYSTEM.VoucherRecord">
+ <summary>
+ 仕訳データ構造体
+ </summary>
+</member>
+<member name="M:ACCOUNT_SYSTEM.VoucherRecord.#ctor(System.Int32,System.Boolean,System.Int32,System.Int32)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="_subject">科目名</param>
+ <param name="_amount">金額名</param>
+</member>
+<member name="T:ACCOUNT_SYSTEM.MyComboBoxItem">
+ <summary>
+ コンボボックスに裏の値を持たせる用クラス
+ </summary>
+</member>
+<member name="P:ACCOUNT_SYSTEM.DataStore.AccountSubjects">
+ <summary>
+ 勘定科目リスト
+ </summary>
+ <returns>勘定科目リスト</returns>
+</member>
+<member name="P:ACCOUNT_SYSTEM.VoucherBaseForm.DataStore">
+ <summary>
+ 勘定科目一覧
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ACCOUNT_SYSTEM.VoucherBaseForm.EndButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ 画面を閉じる
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:ACCOUNT_SYSTEM.VoucherBaseForm.MakeWindowDataReadonly">
+ <summary>
+ コンボボックスReadonly処理
+ </summary>
+</member>
+<member name="M:ACCOUNT_SYSTEM.VoucherBaseForm.DebitGroup1SelectedChanged">
+ <summary>
+ 種別コンボのSelectedが変わったら科目の選択肢を変える
+ </summary>
+</member>
+<member name="M:ACCOUNT_SYSTEM.VoucherBaseForm.OutputSelectInAccountGroup(ACCOUNT_SYSTEM.AccountGroupCombobox,System.Windows.Forms.ComboBox)">
+ <summary>
+ 科目コンボボックスの選択肢を種別に合わせて変更・出力する
+ </summary>
+ <param name="groupCombo">科目種別コンボ</param>
+ <param name="subjectCombo">科目名コンボ</param>
+</member>
+<member name="M:ACCOUNT_SYSTEM.VoucherBaseForm.ConvertAccountSubToGroupId(System.Int32)">
+ <summary>
+ 勘定科目コードを元に種別IDを取得する
+ </summary>
+ <param name="subjectCode"></param>
+ <returns></returns>
+</member>
+<member name="T:ACCOUNT_SYSTEM.VoucherCheckForm">
+ <summary>
+ 仕訳確認画面
+ </summary>
+</member>
+<member name="M:ACCOUNT_SYSTEM.VoucherCheckForm.OutputButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Daoを使ってDBからデータを取得する
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:ACCOUNT_SYSTEM.VoucherCheckForm.VoucherCheckForm_Load(System.Object,System.EventArgs)">
+ <summary>
+ コンボボックスとテキストを書き換え不可にする
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:ACCOUNT_SYSTEM.VoucherCheckForm.OutputVoucherData(System.Data.DataTable)">
+ <summary>
+ 画面に取得した仕訳伝票情報を出力する
+ </summary>
+ <param name="dTable"></param>
+</member>
+<member name="M:ACCOUNT_SYSTEM.JounalVoucherDao.ExecuteInsert(System.Text.StringBuilder)">
+ <summary>
+ インサート処理　※本来は結果とか戻すと良いんだけども
+ </summary>
+ <param name="query"></param>
+</member>
+<member name="M:ACCOUNT_SYSTEM.RegisterForm.RegisterButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ 登録ボタンを押す
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:ACCOUNT_SYSTEM.Menu">
+ <summary>
+ 勘定科目データをDBから取得する
+ </summary>
+</member>
+<member name="P:ACCOUNT_SYSTEM.Menu.dataStore">
+ <summary>
+ データ保存オブジェクト
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ACCOUNT_SYSTEM.Menu.InitializeAccountSystem">
+ <summary>
+ システム起動に必要なデータをDBから取得する
+ </summary>
+</member>
+<member name="M:ACCOUNT_SYSTEM.Menu.RecordFormButton_Click(System.Object,System.EventArgs)">
+ <summary>
+ Screen transition to RecordForm
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+</members>
+</doc>
